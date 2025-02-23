@@ -1,0 +1,90 @@
+[
+    {
+        "id":1,
+        "name":"Story Book",
+        "title":"Free Story",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":2,
+        "name":"Comedy Book",
+        "title":"Free Story",
+        "price":20,
+        "category":"Entertainment",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":3,
+        "name":"Sports Book",
+        "title":"Free Story",
+        "price":50,
+        "category":"Sports",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":4,
+        "name":"Song Book",
+        "title":"Free Story",
+        "price":100,
+        "category":"Music",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":5,
+        "name":"Poem Book",
+        "title":"Free Story",
+        "price":150,
+        "category":"Poetry",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":6,
+        "name":"Food Book",
+        "title":"Free Story",
+        "price":0,
+        "category":"Food",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":7,
+        "name":"Story Book",
+        "title":"Free Story",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":8,
+        "name":"Story Book",
+        "title":"Free Story",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":9,
+        "name":"Story Book",
+        "title":"Free Story",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":10,
+        "name":"Story Book",
+        "title":"Free Story",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    },
+    {
+        "id":11,
+        "name":"Story Book",
+        "title":"Free Story",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1740213531~exp=1740217131~hmac=2e6e13c2cfd1ec5929594c1ed176e1c844cc5ab2171e6fbd4b7a2a8bfd097cc9&w=1060"
+    }
+]
