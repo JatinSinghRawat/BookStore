@@ -23,7 +23,7 @@ function Contact() {
         // Add the access key directly to the data object
         const formData = {
             ...data,
-            access_key: "647cefd5-512c-4adb-bb9a-b6a697e4d7c6" // Add your access key
+            access_key: "" // Add your access key from web3forms
         };
 
         const json = JSON.stringify(formData);
