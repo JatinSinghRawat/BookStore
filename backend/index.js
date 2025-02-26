@@ -18,8 +18,8 @@ app.use(express.json())// It will parse the data into json we are sending throug
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-      user: 'jatinrawat.gdscgenai@gmail.com',
-      pass: 'jrqf vyyg qohw ejdf', // Use an app password for security
+      user: 'Your e-mail address',
+      pass: 'Your password', // Use an app password for security
   },
 });
 
@@ -31,7 +31,7 @@ app.post('/send-email', (req, res) => {
   }
 
   const mailOptions = {
-      from: 'jatinrawat.gdscgenai@gmail.com',
+      from: 'Your email'
       to: email,
       subject: 'Welcome to our Platform!',
       text: 'Thank you for subscribing! We are excited to have you on board. Stay tuned for more updates.',
