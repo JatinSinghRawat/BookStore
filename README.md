@@ -69,7 +69,7 @@ EMAIL_PASS=your_email_password
 ### 4️⃣ Start the Development Servers
 #### Start Backend Server
 ```sh
-npm run dev
+npm start
 ```
 #### Start Frontend Server
 ```sh
