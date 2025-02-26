@@ -4,6 +4,7 @@ import Course from '../Components/Course'
 import Footer from '../Components/Footer'
 
 function courses() {
+  console.log("I am in courses");
   return (
     <>
         <Navbar/>

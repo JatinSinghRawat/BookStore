@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link,Navigate } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
+import axios from 'axios'
+import toast from 'react-hot-toast'
 
 function Signup() {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -16,11 +18,34 @@ function Signup() {
         document.querySelector("html").setAttribute("data-theme","light");
     }
     },[])
+
+
     
     
     // Submit handler function
-    const onSubmit = (data) => {
-        console.log("Form Data:", data);
+    const onSubmit = async (data) => {
+        console.log(data);
+        const userInfo ={
+            fullname:data.fullname,
+            email:data.email,
+            password:data.password
+        }
+       await axios.post("http://localhost:4001/user/signup",userInfo)
+        .then((res)=>{
+            console.log(res.data);
+            if(res.data){
+                toast.success('Signup Successfull');
+                <Navigate to ='/'/>
+            }
+            localStorage.setItem("Users",JSON.stringify(res.data.user));//to authenticate user
+             // Set the user in auth context to trigger re-render and navigation
+            setAuthUser(res.data.user);
+        }).catch((err)=>{
+            if(err.response){
+                console.log(err);
+                toast.error("Error:"+err.response.data.message);
+            }
+        })
     };
 
     return (
@@ -37,9 +62,9 @@ function Signup() {
                             className="mt-2 w-full px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500" 
                             type="text" 
                             placeholder="Enter your full name"
-                            {...register("name", { required: "Name is required" })}
+                            {...register("fullname", { required: "Name is required" })}
                         />
-                        {errors.name && <p className="text-red-500 text-xs">{errors.name.message}</p>}
+                        {errors.fullname && <p className="text-red-500 text-xs">{errors.fullname.message}</p>}
                     </div>
 
                     {/* Email Input */}

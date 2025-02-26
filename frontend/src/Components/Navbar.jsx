@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Login from './Login';
+import { useAuth } from '../Context/AuthProvider';
+import Logout from './logout';
 
 function Navbar() {
+
+    const [authUser,setAuthUser] = useAuth();
     //theme toggle
     const [theme, setTheme] = useState(localStorage.getItem("theme")==="dark"?"dark":"light");
 
@@ -45,7 +49,7 @@ function Navbar() {
         <li className='font-bold'>
             <Link to="/course">Courses</Link>
         </li>
-        <li className='font-bold'><Link to='/contact'>Contact</Link>
+        <li className='font-bold'><Link to="/contact">Contact</Link>
         </li>
         <li className='font-bold'><a>About</a></li>
     </>)
@@ -123,12 +127,19 @@ function Navbar() {
                                 </svg>
                             </label>
                         </div>
+
+                        {
+                            authUser?<Logout/>:
                         <div>
                             <a className="bg-blue-100 text-black px-3 py-2 rounded-md hover:bg-blue-200 cursor-pointer"
                             onClick={() => document.getElementById("my_modal_5").showModal()}>Login
                             </a>
                             <Login/>    
                         </div>
+                        }
+
+
+
                     </div>
                 </div>
             </div>

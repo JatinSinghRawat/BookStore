@@ -4,7 +4,7 @@ function Cards({item}) {
     return (
         <>
             <div className='mt-4 mb-4 p-3'>       
-                <div className="card bg-base-100 w-92 shadow-xl hover:scale-105 duration-200 dark:border">
+                <div className="card bg-base-100 w-90 h-90 shadow-xl hover:scale-105 duration-200 dark:border">
                     <figure>
                         <img
                             src={item.image}
